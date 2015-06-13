@@ -1,0 +1,45 @@
+<%= form_for(@my_book) do |f| %>
+  <% if @my_book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@my_book.errors.count, "error") %> prohibited this my_book from being saved:</h2>
+
+      <ul>
+      <% @my_book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :book_title %>
+    <%= f.text_field :book_title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :author’s_name %><br>
+    <%= f.text_field :author’s_name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :price %><br>
+    <%= f.number_field :price, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :publisher %><br>
+    <%= f.text_field :publisher, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :release_date %><br>
+    <%= f.date_select :release_date %>
+  </div>
+  <div class="form-group">
+    <%= f.label :code %><br>
+    <%= f.number_field :code, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :picture %><br>
+    <%= f.text_field :picture, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

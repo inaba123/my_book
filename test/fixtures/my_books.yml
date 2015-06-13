@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book_title: MyString
+  author’s_name: MyString
+  price: 1
+  publisher: MyString
+  release_date: 2015-06-06
+  code: 1
+
+two:
+  book_title: MyString
+  author’s_name: MyString
+  price: 1
+  publisher: MyString
+  release_date: 2015-06-06
+  code: 1

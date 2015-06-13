@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @my_book.book_title %>
+</p>
+
+<p>
+  <strong>Author’s name:</strong>
+  <%= @my_book.author’s_name %>
+</p>
+
+<p>
+  <strong>価格:</strong>
+  <%= @my_book.price %>
+</p>
+
+<p>
+  <strong>出版社:</strong>
+  <%= @my_book.publisher %>
+</p>
+
+<p>
+  <strong>出版日:</strong>
+  <%= @my_book.release_date %>
+</p>
+
+<p>
+  <strong>コード:</strong>
+  <%= @my_book.code %>
+</p>
+
+<p>
+  <strong>picture:</strong>
+  <img src="<%= @my_book.picture %>">
+</p>
+
+<%= link_to 'Edit', edit_my_book_path(@my_book) %> |
+<%= link_to 'Back', my_books_path %>
