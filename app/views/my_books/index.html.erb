@@ -24,7 +24,7 @@
         <td><%= my_book.author’s_name %></td>
         <td><%= number_to_currency(my_book.price, unit: '¥', perception: 0) %></td>
         <td><%= my_book.publisher %></td>
-        <td><%= my_book.release_date %></td>
+        <td><%= my_book.release_date.strftime('%Y%m%d') %></td>
         <td><%= my_book.code %></td>
         <td><img src="<%= my_book.picture %>" class="img-responsive"></td>
         <td><%= link_to '観覧', my_book, class: "btn btn-success btn-lg" %></td>
